@@ -11,8 +11,10 @@ window.setTimeout(function () {
             list.push(add);
             entry = prompt('What you like to do?');
         }
-        if (entry = 'list') {
-            console.log(list);
+        if (entry === 'list') {
+            for (let print of list) {
+                console.log(`${list.indexOf(print) + 1} ${print}`);
+            }
             entry = prompt('What you like to do?');
         }
     }
